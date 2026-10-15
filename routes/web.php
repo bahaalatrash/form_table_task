@@ -21,7 +21,7 @@ Route::get('/create',function(){
    return view('create');
 })->name('products.create');
 
-Route::post('/store',function(ProductStoreRequest $request){
+Route::post('/',function(ProductStoreRequest $request){
     Product::create($request->validated());
     return redirect()->route('products.index');
 })->name('products.store');

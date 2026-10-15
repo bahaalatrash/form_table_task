@@ -36,6 +36,7 @@
                     <td>{{ $product->price }}</td>
                     <td>{{ $product->category }}</td>
                     <td>{{ $product->created_at }}</td>
+
                 </tr>
             @endforeach
         </tbody>
