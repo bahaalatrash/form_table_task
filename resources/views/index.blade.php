@@ -48,7 +48,16 @@
     </div>
 
 
-    <a href="{{ route('products.create') }}">create new product </a>
+    <a href="{{ route('products.create') }}">create new product </a><br>
+    {{-- <a href="{{ route('products.search') }}"> search by product name</a> --}}
+
 </body>
+
+<form action="{{ route('products.search') }}" method="get">
+    @csrf
+    <label for="search">search by name :</label>
+    <input type="text" id="search" name="search">
+    <button type="submit" , style="color: blue">search</button>
+</form>
 
 </html>
