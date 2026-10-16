@@ -14,6 +14,8 @@ Route::get('/', function () {
 Route::prefix('products')->group(function () {
 Route::get('/',function(){
     $products = Product::all();
+    //for pagination
+    $products = Product::paginate(10);
     return view('index',compact('products'));
 })->name('products.index');
 

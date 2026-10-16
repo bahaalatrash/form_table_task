@@ -15,15 +15,15 @@
 </head>
 
 <body>
-
+    <h2 style="color: greenyellow"> products </h2>
 
     <table class="table table-striped-columns">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
+                <th style="color: blue">Name</th>
                 <th>Price</th>
-                <th>Category</th>
+                <th style="color: blue">Category</th>
                 <th>Created At</th>
 
             </tr>
@@ -41,8 +41,14 @@
             @endforeach
         </tbody>
     </table>
-    <a href="{{ route('products.create') }}">create</a>
 
+
+    <div>
+        {{ $products->links() }}
+    </div>
+
+
+    <a href="{{ route('products.create') }}">create new product </a>
 </body>
 
 </html>

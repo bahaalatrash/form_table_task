@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <h4 style="color: greenyellow"> enter your product details down below , description optional</h4>
     <form action="{{ route('products.store') }}" method="Post">
         @csrf
         <label for="name">Name:</label>
@@ -24,7 +25,7 @@
         <input type="text" id="category" name="category"><br><br>
         <label for="description">Description:</label>
         <input type="text" id="description" name="description"><br><br>
-        <button type="submit">submit</button>
+        <button type="submit" , style="color: blue">submit</button>
         {{-- <a href="{{ route('products.store') }}">submit</a> --}}
     </form>
 </body>
