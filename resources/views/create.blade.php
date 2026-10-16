@@ -21,10 +21,10 @@
         <input type="text" id="name" name="name"><br><br>
         <label for="price">Price:</label>
         <input type="text" id="price" name="price"><br><br>
-        <label for="category">Category:</label>
-        <input type="text" id="category" name="category"><br><br>
+        <label for="category" >Category:</label>
+        <input type="text" id="category" name="category" placeholder="e.g., electronics, clothing, food"><br><br>
         <label for="description">Description:</label>
-        <input type="text" id="description" name="description"><br><br>
+        <input type="text" id="description" name="description" placeholder="optional"><br><br>
         <button type="submit" , style="color: blue">submit</button>
         {{-- <a href="{{ route('products.store') }}">submit</a> --}}
     </form>
