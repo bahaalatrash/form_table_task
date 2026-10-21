@@ -19,7 +19,9 @@ Route::get('/',[ProductController::class,'index'])->name('products.index');
 Route::get('/create',[ProductController::class,'create'])->name('products.create');
 Route::post('/',[ProductController::class,'store'])->name('products.store');
 Route::get('/search',[ProductController::class,'search'])->name('products.search');
-
+Route::get('/{id}/edit',[ProductController::class,'edit'])->name('product.edit');
+Route::put('/{id}/update',[ProductController::class,'update'])->name('product.update');
+Route::delete('/{id}/delete',[ProductController::class,'destroy'])->name('product.destroy');
 
 // Route::get('/',function(){
 //     // $products = Product::all(); /// using controller more orgnized
